@@ -4,6 +4,7 @@ import { CqSharedModule } from 'cq-shared' // 'projects/cq-shared/src/public-api
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FeaturesModule } from './features/features.module';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FeaturesModule,
     CqSharedModule
   ],
   providers: [],
