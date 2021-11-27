@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { CqSharedModule } from 'projects/cq-shared/src/public-api';
+import { CqSharedModule } from 'cq-shared' // 'projects/cq-shared/src/public-api';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
