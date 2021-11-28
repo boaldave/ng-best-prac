@@ -13,8 +13,8 @@ import { CqSharedModule } from 'cq-shared';
   imports: [
     CommonModule,
     HeaderFooterSidebarsLayoutRoutingModule,
-    CqSharedModule,
-    FeaturesModule
+    FeaturesModule,
+    CqSharedModule
   ]
 })
 export class HeaderFooterSidebarsLayoutModule { }

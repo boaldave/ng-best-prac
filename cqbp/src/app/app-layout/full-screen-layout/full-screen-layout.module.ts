@@ -5,7 +5,6 @@ import { FullScreenLayoutRoutingModule } from './full-screen-layout-routing.modu
 import { FullScreenLayoutComponent } from './full-screen-layout.component';
 import { CqSharedModule } from 'cq-shared' // 'projects/cq-shared/src/public-api';
 import { FeaturesModule } from 'src/app/features/features.module';
-
 @NgModule({
   declarations: [
     FullScreenLayoutComponent
@@ -13,8 +12,8 @@ import { FeaturesModule } from 'src/app/features/features.module';
   imports: [
     CommonModule,
     FullScreenLayoutRoutingModule,
-    CqSharedModule,
-    FeaturesModule
+    FeaturesModule,
+    CqSharedModule
   ]
 })
 export class FullScreenLayoutModule { }

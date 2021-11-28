@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FeaturesComponent } from 'src/app/features/features.component';
 import { HeaderFooterSidebarsLayoutComponent } from './header-footer-sidebars-layout.component';
 
 const routes: Routes = [
@@ -9,7 +10,8 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        loadChildren: () => import('../../features/features.module').then(m => m.FeaturesModule)
+        component: FeaturesComponent
+        // loadChildren: () => import('../../features/features.module').then(m => m.FeaturesModule)
       }
     ]
   }

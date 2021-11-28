@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AppLayoutComponent } from './app-layout/app-layout.component';
+import { AppLayoutModule } from './app-layout/app-layout.module';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
@@ -8,11 +10,12 @@ import { AppComponent } from './app.component';
   declarations: [
     // components, directives, pipes that belong to this module,
     // must declare every component in exactly one NgModule class
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule, //browser specific services such as DOM rendering, sanitization, and location.
-    AppRoutingModule
+    AppRoutingModule,
+    AppLayoutModule
   ],
   exports: [
     // declared classes are visible within the module but invisible to components 
