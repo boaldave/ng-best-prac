@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FeaturesComponent } from 'src/app/features/features.component';
 import { HeaderFooterSidebarsLayoutComponent } from './header-footer-sidebars-layout.component';
 
 const routes: Routes = [
@@ -10,8 +9,11 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: FeaturesComponent
-        // loadChildren: () => import('../../features/features.module').then(m => m.FeaturesModule)
+        // canActivate: [OktaAuthGuard, PostLoginGuard],
+        // component: FeaturesComponent
+        // - doesn't load into proper router-outlet
+        loadChildren: () => import('../../features/features.module')
+          .then(m => m.FeaturesModule)
       }
     ]
   }

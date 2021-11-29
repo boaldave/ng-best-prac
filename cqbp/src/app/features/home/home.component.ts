@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'cqbp-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })

@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { HeaderFooterSidebarsLayoutRoutingModule } from './header-footer-sidebars-layout-routing.module';
 import { HeaderFooterSidebarsLayoutComponent } from './header-footer-sidebars-layout.component';
-import { FeaturesModule } from 'src/app/features/features.module';
 import { CqSharedModule } from 'cq-shared';
 
 @NgModule({
@@ -13,7 +12,6 @@ import { CqSharedModule } from 'cq-shared';
   imports: [
     CommonModule,
     HeaderFooterSidebarsLayoutRoutingModule,
-    FeaturesModule,
     CqSharedModule
   ]
 })

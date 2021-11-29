@@ -5,15 +5,22 @@ import { AppLayoutComponent } from './app-layout/app-layout.component';
 const routes: Routes = [
   {
     path: '',
-    component: AppLayoutComponent
-    //loadChildren: () => import('./app-layout/app-layout.module').then(m => m.AppLayoutModule)
+    children: [
+      {
+        path: '',
+        // canActivate: [OktaAuthGuard, PostLoginGuard],
+        component: AppLayoutComponent
+        //loadChildren: () => import('./app-layout/app-layout.module')
+        //  .then(m => m.AppLayoutModule)
+      },
+      // { path: '**', redirectTo: '' }
+    ]
   },
   // {
   //   path: 'post-login',
   //   component: PostLoginComponent
   // },
   // { path: 'security/receiveToken', pathMatch: 'full', component: AppSecurityComponent },
-
 ];
 
 @NgModule({

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'cqbp-entities',
   templateUrl: './entities.component.html',
   styleUrls: ['./entities.component.scss']
 })

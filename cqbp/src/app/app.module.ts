@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppLayoutComponent } from './app-layout/app-layout.component';
 import { AppLayoutModule } from './app-layout/app-layout.module';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -15,7 +14,7 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule, //browser specific services such as DOM rendering, sanitization, and location.
     AppRoutingModule,
-    AppLayoutModule
+    AppLayoutModule  // needed to access AppLayoutComponent in Routing module
   ],
   exports: [
     // declared classes are visible within the module but invisible to components 
